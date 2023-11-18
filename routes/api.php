@@ -18,5 +18,3 @@ use App\Http\Controllers\ProfileController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::get('/profile/{id}', [ProfileController::class, 'index']);
